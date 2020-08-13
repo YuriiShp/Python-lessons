@@ -3,3 +3,9 @@
 inp_str = input('Input: ')
 if len(inp_str) != 0:
     print('OK')
+    
+    
+# Correct
+inp_str = input('Input: ')
+if inp_str:
+    print('OK')
