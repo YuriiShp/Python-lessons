@@ -4,3 +4,10 @@ arr = [3, 5, 67, 6.8, 21, 0, 55, 419, 3]
 inp_num = float(input('Input number: '))
 if arr.count(inp_num) != 0:
     print('OK')
+
+    
+# Correct
+arr = [3, 5, 67, 6.8, 21, 0, 55, 419, 3]
+inp_num = float(input('Input number: '))
+if inp_num in arr:
+    print('OK')
