@@ -8,6 +8,6 @@ data_list = [1, 'hello', True, 3.14, [1, 4, 5, 0], {5, 6, 1, 0},
 new_dict = dict()
 
 for i in range(len(data_list)):
-    dict_key = str(type(data_list[i]))
+    dict_key = str(type(data_list[i])).split("'")[1]
     new_dict.update({dict_key: data_list[i]})
 print(new_dict)
