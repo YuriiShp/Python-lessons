@@ -65,8 +65,8 @@ class User:
 
         regEx = re.compile(r'Name: (.*)\nLast Name: (.*)\nCompany: (.*)\nAge: (.*)')
         mo = regEx.search(f.read())
-        print(mo.groups())
         name, last_name, company, age = mo.groups()
+        f.close()
 
         return cls(name, last_name, age, company)
 
